@@ -1,0 +1,36 @@
+.navbar .mega_menu {
+  right: 0;
+  padding: 1rem;
+  width: fit-content;
+  max-width: fit-content;
+  height: fit-content;
+  max-height: 500px;
+  overflow-y: auto;
+  margin-top: 0;
+}
+
+.navbar .mega_menu li {
+  padding: 4px 4px 4px 0;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  min-width: 100%;
+  max-width: max-content;
+}
+
+.dropdown-item.active {
+  background-color: #e2e2e2 !important;
+}
+
+.mega_menu_col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+@media screen and (max-width: 360px) {
+  .mega_menu_col {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&family=Work+Sans:wght@400;500;700;800;900&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+@media screen and (min-width: 1500px) {
+  body,
+  nav,
+  .dev_note {
+    max-width: 1344px;
+    margin: 0 auto;
+  }
+}
+
+/* General Styling */
+.standard__border_radius {
+  border-radius: 0.75rem !important;
+}
+
+.standard__box_shadow {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.standard__bg,
+.standard__card_bg {
+  background: #e2e2e2 !important;
+}
+
+.standard__card_bg:hover {
+  background: #fff !important;
+  transition: all 0.25s;
+}
+
+.standard__badge {
+  color: #222 !important;
+  font-size: 1rem !important;
+  background: #e2e2e2 !important;
+  border-radius: 1rem !important;
+}
+
+.not_badge {
+  margin: 0.1rem;
+  padding: 0;
+  background: none;
+  border: none !important;
+  border-radius: 0;
+  font-weight: 400;
+  cursor: auto;
+}
+
+.default__margin_top {
+  margin-top: 3rem;
+}
+
+.gradient_text {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  background: #223BC9;
+  background: -webkit-linear-gradient(to right, #E63B60, #223BC9);
+  background: linear-gradient(to right, #E63B60, #223BC9);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient_text_footer {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  background: #223BC9;
+  background: -webkit-linear-gradient(to left, #E63B60, #223BC9);
+  background: linear-gradient(to left, #E63B60, #223BC9);
+  background-size: 20%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+a.nav-link {
+  color: #222 !important;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.navbar-light .navbar-toggler {
+  border: 2px solid #222;
+}
+
+button:not(.navbar-toggler):hover {
+  color: #fff;
+  background: #223BC9 !important;
+  transition: all 0.25s;
+}
+
+span {
+  display: inline-block;
+  margin: 0.25rem;
+  padding: 0.2rem 0.5rem;
+  background: #e2e2e2;
+  border: 1px solid #222;
+  border-radius: 1rem !important;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+footer {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.img__overlay_container {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img__overlay_container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 225px;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+  pointer-events: none;
+}
+
+.img__overlay_container img {
+  max-width: 100%;
+  width: 1344px;
+  height: 350px;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+@media screen and (max-width: 360px) {
+  .item_details__container,
+  .review_container,
+  .reviews_container__wrapper {
+    margin: 0.75rem 0.2rem !important;
+    padding: 0.5rem !important;
+  }
+
+  .item_details__container {
+    width: 90%;
+    padding: 0.25rem;
+  }
+
+  .pagination button {
+    font-size: 13px;
+    padding: 0.4rem;
+  }
+}
+/* General Styling */
+
+.review_container {
+  word-wrap: break-word;
+}
+
+
+
+.star-icon {
+  width: 24px;
+  height: 24px;
+}
+
+
+.borderless{
+  border: none;
+  background: none;
+}
+
+
+
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header.light {
+  background-color: #fff;
+  color: #000;
+}
+
+header.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+body.light {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+body.dark {
+  background-color: #121212;
+}
+
+.hov{
+  cursor: pointer;
+}
